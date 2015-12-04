@@ -18,6 +18,9 @@
 		2A06AD1F1C1035E9006152C5 /* FirstWay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06AD1E1C1035E9006152C5 /* FirstWay.m */; };
 		2A06AD221C10360D006152C5 /* SecondWay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06AD211C10360D006152C5 /* SecondWay.m */; };
 		2A06AD261C103981006152C5 /* ThreeWay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06AD251C103981006152C5 /* ThreeWay.m */; };
+		2A06AD6A1C113B09006152C5 /* FourWay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06AD691C113B09006152C5 /* FourWay.m */; };
+		2A06AD6F1C1145BE006152C5 /* Values+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06AD6C1C1145BE006152C5 /* Values+CoreDataProperties.m */; };
+		2A06AD701C1145BE006152C5 /* Values.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06AD6E1C1145BE006152C5 /* Values.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		2A06AD211C10360D006152C5 /* SecondWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondWay.m; sourceTree = "<group>"; };
 		2A06AD241C103981006152C5 /* ThreeWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeWay.h; sourceTree = "<group>"; };
 		2A06AD251C103981006152C5 /* ThreeWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeWay.m; sourceTree = "<group>"; };
+		2A06AD681C113B09006152C5 /* FourWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourWay.h; sourceTree = "<group>"; };
+		2A06AD691C113B09006152C5 /* FourWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourWay.m; sourceTree = "<group>"; };
+		2A06AD6B1C1145BE006152C5 /* Values+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Values+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2A06AD6C1C1145BE006152C5 /* Values+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Values+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2A06AD6D1C1145BE006152C5 /* Values.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Values.h; sourceTree = "<group>"; };
+		2A06AD6E1C1145BE006152C5 /* Values.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Values.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,7 @@
 		2A06ACE61C1035A5006152C5 /* 页面传值demo */ = {
 			isa = PBXGroup;
 			children = (
+				2A06AD671C1136F6006152C5 /* model */,
 				2A06AD231C103643006152C5 /* controller */,
 				2A06ACEA1C1035A5006152C5 /* AppDelegate.h */,
 				2A06ACEB1C1035A5006152C5 /* AppDelegate.m */,
@@ -116,7 +126,6 @@
 				2A06ACF61C1035A5006152C5 /* Assets.xcassets */,
 				2A06ACF81C1035A5006152C5 /* LaunchScreen.storyboard */,
 				2A06ACFB1C1035A5006152C5 /* Info.plist */,
-				2A06ACF31C1035A5006152C5 /* ____demo.xcdatamodeld */,
 				2A06ACE71C1035A5006152C5 /* Supporting Files */,
 			);
 			path = "页面传值demo";
@@ -157,8 +166,22 @@
 				2A06AD211C10360D006152C5 /* SecondWay.m */,
 				2A06AD241C103981006152C5 /* ThreeWay.h */,
 				2A06AD251C103981006152C5 /* ThreeWay.m */,
+				2A06AD681C113B09006152C5 /* FourWay.h */,
+				2A06AD691C113B09006152C5 /* FourWay.m */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		2A06AD671C1136F6006152C5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2A06AD6B1C1145BE006152C5 /* Values+CoreDataProperties.h */,
+				2A06AD6C1C1145BE006152C5 /* Values+CoreDataProperties.m */,
+				2A06AD6D1C1145BE006152C5 /* Values.h */,
+				2A06AD6E1C1145BE006152C5 /* Values.m */,
+				2A06ACF31C1035A5006152C5 /* ____demo.xcdatamodeld */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A06AD261C103981006152C5 /* ThreeWay.m in Sources */,
+				2A06AD6F1C1145BE006152C5 /* Values+CoreDataProperties.m in Sources */,
 				2A06ACEC1C1035A5006152C5 /* AppDelegate.m in Sources */,
 				2A06ACF51C1035A5006152C5 /* ____demo.xcdatamodeld in Sources */,
 				2A06AD1F1C1035E9006152C5 /* FirstWay.m in Sources */,
+				2A06AD6A1C113B09006152C5 /* FourWay.m in Sources */,
+				2A06AD701C1145BE006152C5 /* Values.m in Sources */,
 				2A06ACE91C1035A5006152C5 /* main.m in Sources */,
 				2A06AD221C10360D006152C5 /* SecondWay.m in Sources */,
 			);
@@ -520,6 +546,7 @@
 				2A06AD161C1035A5006152C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A06AD171C1035A5006152C5 /* Build configuration list for PBXNativeTarget "页面传值demoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +555,7 @@
 				2A06AD191C1035A5006152C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A06AD1A1C1035A5006152C5 /* Build configuration list for PBXNativeTarget "页面传值demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +564,7 @@
 				2A06AD1C1C1035A5006152C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
